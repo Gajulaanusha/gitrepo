@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prime numbers</title>
+</head>
+<body>
+    <script>
+        var isPrime=true;
+        function prime(input){
+              for(let i=1;i<=input/2;i++){
+                if(input%2==0){
+                    isPrime=false;
+                    break;
+                }
+              }
+              return isPrime;
+        }
+     console.log(prime(8))
+    </script>
+</body>
+</html>

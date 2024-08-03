@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array of objects</title>
+</head>
+<body>
+    <script>
+        const obj=[{name : 'ansuha',
+                    runs:10000,
+                    location:'hyderabad'
+                   },
+                  { name:'jasmine',
+                    runs:15000,
+                    location:'ongole'
+                  },
+                   {name:'harini',
+                    runs:17000,
+                    location:'vizag'
+                  }]  
+                  obj.map((ele,ind,oa)=>{
+                    ele.hundreds=50;
+                    return obj
+                  })
+                  console.log(obj);
+        </script>
+</body>
+</html>

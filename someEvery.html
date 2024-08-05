@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>some and every method</title>
+</head>
+<body>
+    <script>
+        //some method
+        let arr=[];
+        for(let i=1;i<=5;i++){
+            arr.push(Math.floor(Math.random()*100)+50);
+        }
+        console.log(arr);
+        const newarr=arr.some((input)=>{
+           return input>100;
+        })
+         console.log(newarr)
+         //every method
+         let arr2=[];
+         for(let i=1;i<=5;i++){
+            arr2.push(Math.floor(Math.random()*100)+50);
+         }
+         console.log(arr2);
+        let newarr2= arr2.every((input)=>{
+            return input>100;
+         })
+         console.log(newarr2)
+    </script>
+</body>
+</html>
